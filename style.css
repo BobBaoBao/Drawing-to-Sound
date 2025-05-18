@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.color-brushes {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.color-brush {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.color-brush.active {
+    border-color: #007bff;
+    transform: scale(1.2);
+}
+
+.brush-size-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#doodleArea {
+    border: 2px solid #333;
+    cursor: crosshair;
+    touch-action: none; /* Prevents scrolling on touch devices while drawing */
+    background-color: #fff; /* Ensure canvas background is white for pixel data */
+    max-width: 100%;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#clearButton {
+    background-color: #dc3545;
+}
+
+#clearButton:hover {
+    background-color: #c82333;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
