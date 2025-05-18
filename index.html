@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doodle to Sound</title>
+    <title>Bob 画图变音乐 Doodle to Sound</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Doodle to Sound</h1>
+        <h1>Bob 画图变音乐 Doodle to Sound</h1>
 
         <div class="controls">
             <div class="color-brushes">
@@ -20,7 +20,7 @@
                 <button class="color-brush" data-color="black" style="background-color: black;"></button>
             </div>
             <div class="brush-size-control">
-                <label for="brushSize">Brush Size:</label>
+                <label for="brushSize">Brush Size 画笔大小:</label>
                 <input type="range" id="brushSize" min="1" max="20" value="5">
             </div>
         </div>
@@ -28,14 +28,18 @@
         <canvas id="doodleArea"></canvas>
 
         <div class="action-buttons">
-            <button id="playSoundButton">Turn Drawing Into Sound</button>
-            <button id="clearButton">Clear Drawing</button>
+            <button id="playSoundButton">Turn Drawing Into Sound将绘画转化为声音</button>
+            <button id="clearButton">Clear Drawing清除绘画</button>
         </div>
         <p class="instructions">
             Select a color, adjust brush size, and draw on the canvas.
             Then, click "Turn Drawing Into Sound" to hear your creation!
             Higher notes are at the top, lower notes at the bottom.
             Drawing plays from left to right. Different colors have different timbres.
+            选择颜色、调整笔刷大小，然后在画布上绘制。
+            接着点击“将绘画转为声音”，即可聆听你的创作！
+            顶部对应高音，底部对应低音。
+            绘画从左向右播放，不同颜色拥有不同音色。
         </p>
     </div>
 
